@@ -1,8 +1,8 @@
 require_relative './test.rb'
 
 
-class Multiple < Decorator::Base
-  def call(this, ret, args, &block)
+class Multiply < Decorator::Base
+  def call(this, args, ret, &block)
     multiplier, = @decorator_args
 
     return multiplier * ret if ret
@@ -14,7 +14,7 @@ end
 class DivideDecorator < Decorator::Base
   decorator_name :divide
 
-  def call(this, ret, args, &block)
+  def call(this, args, ret, &block)
     divider, = @decorator_args
 
     return ret / divider if ret
@@ -26,8 +26,8 @@ end
 class Controller
   extend Decorator::DecoratorAware
 
-  Multiple(2)
-  Multiple(3)
+  Multiply(2)
+  Multiply(3)
   def index
     10
   end

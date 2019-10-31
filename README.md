@@ -24,7 +24,7 @@ Decorators can be used to wrap around method calls. Decoators can have their own
 
 ```ruby
 class Multiply < Decorator::Base
-  def call(this, ret, args, &block)
+  def call(this, args, ret, &block)
     multiplier, = @decorator_args
 
     return multiplier * ret if ret
@@ -52,7 +52,7 @@ Decorators can have names other than the class:
 class DivideDecorator < Decorator::Base
   decorator_name :divide
 
-  def call(this, ret, args, &block)
+  def call(this, args, ret, &block)
     #
   end
 end
@@ -61,7 +61,7 @@ They can also receive their own block:
 
 ```ruby
 class Route < Decorator::Base
-  def call(this, ret, args, &block)
+  def call(this, args, ret, &block)
     @decorator_block.call
   end
 end

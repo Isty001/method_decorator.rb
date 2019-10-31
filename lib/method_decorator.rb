@@ -34,7 +34,7 @@ module Decorator
       def #{name}(*args, &block)
         ret = nil
         self.class.method_decorator_map[:#{name}].each do |decorator|
-          ret = decorator.call(self, ret, args, &block)
+          ret = decorator.call(self, args, ret, &block)
         end
         ret
       end"
