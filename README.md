@@ -51,9 +51,10 @@ Decorators can have names other than the class:
 ```ruby
 class DivideDecorator < Decorator::Base
   decorator_name :divide
-    def call(this, ret, args, &block)
-        #
-    end
+
+  def call(this, ret, args, &block)
+    #
+  end
 end
 ```
 They can also receive their own block:
@@ -64,7 +65,6 @@ class Route < Decorator::Base
     @decorator_block.call
   end
 end
-
 
 class Controller
   extend Decorator::DecoratorAware
