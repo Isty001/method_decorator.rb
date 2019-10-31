@@ -40,7 +40,7 @@ class Controller
   Multiply(3)
   def index
     10
-   end
+  end
 end
 
 puts Controller.new.index # 60
