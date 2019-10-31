@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Isty001"]
   spec.email         = ["isty001@gmail.com"]
 
-  spec.summary       = %q{Python like method decorator for Ruby}
-  spec.description   = %q{Python like method decorator for Ruby}
-  spec.homepage      = "https://github.com"
+  spec.summary       = %q{Chainable method decorator implementation}
+  spec.description   = %q{Flexible method decorator implementation for Ruby, to wrap around method calls}
+  spec.homepage      = "https://github.com/Isty001/method-decorator"
   spec.license       = "MIT"
 
   # Specify which files should be added to the gem when it is released.
