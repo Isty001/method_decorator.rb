@@ -7,7 +7,7 @@ Method decorator implementation for Ruby, similar to Python.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'method-decorator'
+gem 'method_decorator.rb'
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install method-decorator
+    $ gem install method_decorator.rb
 
 ## Usage and Examples
 
