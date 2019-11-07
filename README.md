@@ -1,6 +1,6 @@
 # MethodDecorator
 
-Method decorator implementation for Ruby, similar to Python. 
+Method decorator implementation for Ruby, similar to Python. Inspired by [this](https://yehudakatz.com/2009/07/11/python-decorators-in-ruby/) article.
 
 ## Installation
 
