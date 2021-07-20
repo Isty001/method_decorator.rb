@@ -2,21 +2,21 @@ PATH
   remote: .
   specs:
     method_decorator.rb (0.1)
+      bundler (>= 2.2.10)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    minitest (5.13.0)
+    minitest (5.14.4)
     rake (12.3.3)
 
 PLATFORMS
-  ruby
+  x86_64-linux
 
 DEPENDENCIES
-  bundler (~> 1.17)
   method_decorator.rb!
   minitest (~> 5.0)
   rake (~> 12.3)
 
 BUNDLED WITH
-   1.17.3
+   2.2.15
